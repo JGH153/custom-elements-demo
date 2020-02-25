@@ -1,0 +1,9 @@
+/* This CSS file is scoped */
+
+:host {
+	cursor: pointer;
+}
+
+span {
+	color: red;
+}

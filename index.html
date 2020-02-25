@@ -9,21 +9,39 @@
 	<!-- <meta name="description" content="The HTML5 Herald"> -->
 	<!-- <meta name="author" content="SitePoint"> -->
 
-	<!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+	<link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
-	|<my-comp></my-comp>|
+	|<my-comp>123</my-comp>|
 
 	<template id="my-comp">
-		<span>
+		<span id="mySpan">
 			halla
 		</span>
+		<slot></slot>
 	</template>
 
-	<script src="js/main.js"></script>
+
+	<template id="my-div">
+		My Div Content:
+		<slot></slot>
+	</template>
+
+	<div is="my-div">
+		A div
+	</div>
+
+	<br><br>
+
+	<button is="my-button">Click mee</button><br>
+	<button>Normal button</button>
+
+	<script src="my-comp/my-comp.js"></script>
+	<script src="my-div/my-div.js"></script>
+	<script src="my-button/my-button.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,5 @@
+/* This CSS file is scoped */
+
+:host {
+	border: 1px solid var(--my-var);
+}

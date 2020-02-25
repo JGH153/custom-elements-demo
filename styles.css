@@ -1,0 +1,5 @@
+ /* This css file is global */
+
+:root {
+	--my-var: blue;
+}
